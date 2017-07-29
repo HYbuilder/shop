@@ -1,0 +1,257 @@
+@charset "utf-8";
+
+.content{
+	width: 100%;
+	background: #fff;
+	/*padding: 20px 0;*/
+}
+
+.content .contenttitle{
+	text-align: center;
+	width: 90%;
+	margin:0 auto;
+	padding: 20px 0;
+}
+.content .contenttitle h2{
+	font-size: 34px;
+	color: #6c6c6c;
+	margin-bottom:20px;
+}
+
+.content .contenttitle .contentlink{
+	width: 100%;
+	border: 1px solid #ffbf25;
+	border-radius: 3px;
+	background:#fff url(../images/dian.png) repeat-y 50% top;
+}
+.content .contenttitle .contentlink a{
+	font-size: 24px;
+	color: #d35d2e;
+	line-height: 64px;
+	width: 50%;
+	height: 64px;
+	float: left;
+}
+
+.content .contenttitle .contentlink a:hover{
+	background:#f5f5f5;
+	color: #000;
+}
+
+
+.foodlist{width: 90%;margin:0 auto;padding-bottom: 20px;}
+
+.foodlist li{
+	text-align: center;
+	width: 50%;
+	float: left;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.foodlist li .imghover{
+	position: relative;
+	opacity: 0;
+	height: 330px;
+}
+.foodlist li .imghover img{
+	opacity: 0.9;
+}
+
+.foodlist li .imghover span{
+	display: block;
+	width: 220px;
+	height: 60px;
+	background: #ffbf25;
+	font-size: 22px;
+	line-height: 60px;
+	color: #000;
+	position: absolute;
+	top: 40%;
+	left: 10%;
+}
+.foodlist li i{
+	font-size: 36px;
+	color: rgb(239,19,91);
+	position: absolute;
+	top: 10px;
+	right: 20px;
+}
+
+
+.imghover a:last-child{
+	display: block;
+	position: absolute;
+	bottom: 30px;
+	right: 20px;
+}
+.foodlist li h2{
+	font-size: 25px;
+	color: #000;
+	font-weight: bold;
+}
+.foodlist li p{
+	font-size: 25px;
+	color: #6c6c6c;
+}
+.foodlist li p span{
+	font-size: 25px;
+	color: #d5270b;
+}
+.foodlist1{background: url(../images/foodlist1.png) no-repeat 4px top;}
+.foodlist2{background: url(../images/foodlist2.png) no-repeat 4px top;}
+.foodlist3{background: url(../images/foodlist3.png) no-repeat 4px top;}
+.foodlist4{background: url(../images/foodlist4.png) no-repeat 4px top;}
+
+.foodlist li .imghover:hover{
+	opacity: 1;
+}
+
+
+
+.header{
+	width: 640px;
+}
+/*头部部分样式*/
+/*header */.single{
+	text-align: center;
+}
+/*header */.single ul{
+	margin:15px 10px 3px 10px;
+	display: inline-block;
+	float: left;
+}
+/*header */.single ul li{ 
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #fff;
+	margin:0 2px;
+}
+/*header */.single span{
+	display: inline-block;
+	font-size: 24px;
+	color: #fff;
+	margin: auto;
+}
+/*header */.single span:nth-child(2){
+	float: left;
+	margin-top: 10px;
+}
+/*header */.single span:nth-child(3){
+	margin:10px 120px 0 0;
+}
+/*header */.single img{
+	margin-right: 10px;
+	margin-top: 15px;
+	float: right;
+}
+
+
+/*标题及菜单按钮样式*/
+.title{text-align: center;margin-bottom: 20px;}
+.title h1{
+	display: inline-block;
+	font-size: 40px;
+	color: #fff;
+	margin-top: 30px;
+	font-weight: normal;
+	padding-left: 60px;
+}
+.title i{
+	width: 50px;
+	height: 50px;
+	border:1px solid #fff;
+	border-radius: 50%;
+	font-size: 30px;
+	line-height: 50px;
+	color: #fff;
+	float: right;
+	margin-top: 30px;
+	margin-right: 20px;
+}
+.title i:hover .menu{
+	display: block;
+}
+#back{
+	font-size: 40px;
+	line-height: 50px;
+	display: inline-block;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	color: #fff;
+	border-radius: 50%;
+	border:1px solid #f6c8b1;
+	float: left;
+	margin:30px 0 0 20px;
+}
+
+
+
+
+/*菜单下拉列表*/
+
+.menu{
+	background: #ffbf25;
+	padding-bottom: 10px;
+	position: absolute;
+	top: 0px;
+	width: 640px;
+	z-index: 999;
+	display: none;
+}
+
+.menu .xiala a:hover{
+	text-decoration: none;
+}
+.menu .xiala a li{
+width: 90%;
+height: 50px;
+text-align: left;
+margin:0 auto;
+border-bottom:1px solid rgba(255,255,255,0.5);
+}
+.menu .xiala a li:hover{
+	background: #d05728;
+}
+.menu .xiala a li:hover span{
+	color: #fff;
+}
+.menu .xiala a li span{
+	font-size: 30px;
+	color: #d05728;
+	height: 50px;
+	line-height: 50px;
+}
+
+.menu .xiala a:last-child li{
+	border-bottom: none;
+}
+
+
+
+/*天气隐藏*/
+.tq{
+	display: none;
+}
+/*天气点击显示按钮*/
+.weather{
+	background: none;
+	outline: none;
+	color: #fff;
+	border:1px solid #fff;
+	position: relative;
+	left: 10px;
+	z-index: 1000;
+}
+
+.single ul li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 0px -3px;
+}

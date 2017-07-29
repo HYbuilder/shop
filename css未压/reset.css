@@ -1,0 +1,210 @@
+body,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,fieldset,legend,input,select,textarea,button,th,td,menu{margin:0;padding:0;}
+ul,dl,ol{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+img,fieldset,input[type="submit"]{border:0 none;}
+em{font-style:normal;}
+strong{font-weight:normal;}
+table{border-collapse:collapse;border-spacing:0;}
+button,input[type="button"]{cursor:pointer;border:0 none;}
+a,button,input,img{-webkit-touch-callout:none;}
+img{pointer-events:none;/*禁止图片的点击事件，例如长按保存图片*/}
+input,select,textarea{outline:none;}
+a{text-decoration:none;}
+.fl{ float: left}
+.fr{ float: right}
+.clear{clear:both;} 
+.clearfix:after{
+  content: "";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix{zoom: 1;}
+html,body{
+/*禁止用户选择元素*/
+-moz-user-select:none;
+ -webkit-user-select: none;
+-ms-user-select: none;
+ -khtml-user-select:none; /*禁止元素点击出现半透明黑色背景*/
+ -webkit-tap-highlight-color:rgba(0, 0, 0, 0); }
+/*html {height: 100%;width: 100%;font-family: 'Heiti SC', 'Microsoft YaHei';outline: 0;-webkit-text-size-adjust:none;}*/
+/*body {height: 100%;margin: 0;position: relative;}*/
+
+/*定义背景图样式*/
+html{width: 640px;margin:0 auto;}
+body{
+	background: url(../images/bg.png) repeat-y top left;
+	width: 640px;
+}
+
+
+/*头部部分样式*/
+header .single{text-align: center;}
+header .single ul{
+	margin:15px 10px 3px 10px;
+	display: inline-block;
+	float: left;
+}
+header .single ul li{ 
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #fff;
+	margin:0 -3px;
+}
+header .single span{
+	display: inline-block;
+	font-size: 24px;
+	color: #fff;
+	margin: auto;
+}
+header .single span:nth-child(2){
+	float: left;
+	margin-top: 10px;
+}
+header .single span:nth-child(3){
+	margin:10px 100px 0 0;
+}
+header .single img{
+	margin-right: 10px;
+	margin-top: 15px;
+	float: right;
+}
+
+
+/*标题及菜单按钮样式*/
+.title{text-align: center;margin-bottom: 20px;}
+.title h1{
+	display: inline-block;
+	font-size: 40px;
+	color: #fff;
+	margin-top: 30px;
+	font-weight: normal;
+}
+.title i{
+	width: 50px;
+	height: 50px;
+	border:1px solid #fff;
+	border-radius: 50%;
+	font-size: 30px;
+	line-height: 50px;
+	color: #fff;
+	float: right;
+	margin-top: 30px;
+	margin-right: 20px;
+}
+
+#back{
+	font-size: 40px;
+	line-height: 44px;
+	display: inline-block;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	color: #fff;
+	border-radius: 50%;
+	border:1px solid #f6c8b1;
+	float: left;
+	margin:30px 0 0 20px;
+}
+
+
+
+.menu{
+	background: #ffbf25;
+	padding-bottom: 10px;
+	position: fixed;
+	top: 0px;
+	width: 640px;
+	z-index: 999;
+	display: none;
+}
+
+.menu .xiala a:hover{
+	text-decoration: none;
+}
+.menu .xiala a li{
+width: 100%;
+height: 50px;
+text-align: center;
+border-bottom:1px solid rgba(255,255,255,0.5);
+}
+.menu .xiala a li:hover{
+	background: #d05728;
+}
+.menu .xiala a li:hover span{
+	color: #fff;
+}
+.menu .xiala a li span{
+	font-size: 30px;
+	color: #d05728;
+	height: 50px;
+	line-height: 50px;
+}
+
+
+/*菜单下拉列表*/
+
+.menu{
+	background: #ffbf25;
+	padding-bottom: 10px;
+	position: absolute;
+	top: 0px;
+	width: 640px;
+	z-index: 999;
+	display: none;
+}
+
+.menu .xiala a:hover{
+	text-decoration: none;
+}
+.menu .xiala a li{
+width: 90%;
+height: 50px;
+text-align: left;
+margin:0 auto;
+border-bottom:1px solid rgba(255,255,255,0.5);
+}
+.menu .xiala a li:hover{
+	background: #d05728;
+}
+.menu .xiala a li:hover span{
+	color: #fff;
+}
+.menu .xiala a li span{
+	font-size: 30px;
+	color: #d05728;
+	height: 50px;
+	line-height: 50px;
+}
+
+.menu .xiala a:last-child li{
+	border-bottom: none;
+}
+
+/*天气隐藏*/
+body > iframe{
+	display: none;
+}
+/*天气点击显示按钮*/
+#weather{
+	background: none;
+	outline: none;
+	color: #fff;
+	border:1px solid #fff;
+	position: relative;
+	left: 10px;
+	z-index: 1000;
+}
+
+
+/*下拉菜单图标字体样式*/
+.xiala li i{
+	color:#fff;
+	font-size: 30px;
+	margin-right: 50px;
+
+}

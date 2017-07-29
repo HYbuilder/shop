@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>the shopping cart</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/sc.css">
+	<link rel="stylesheet" type="text/css" href="./fonts/iconfont.css">
+	<meta name="viewport" content="width=640,target-densitydpi=device-dpi,maximum-scale=1.0,user-scalable=no"/>
+	<script type="text/javascript">
+    function setWidth(e){if(/Andriod/i.test(navigator.userAgent)){var f,d=window.innerWidth;(d!=e)&&(f=d/e),document.addEventListener("DOMContentLoaded",function(){var a=document.getElementsByTagName("body")[0];a.style.webkitTransformOrigin="left top";a.style.webkitTransform="scale("+f+")"},!1)}}setWidth(640);
+    </script>
+    <script src="../js/jquery-1.10.2.js"></script>
+	<script>
+	function show(){
+		var nav=document.getElementById("caidan");
+		nav.style.display="block"
+	}
+	</script>
+
+</head>
+<body>
+	<button id="weather">点击显示天气</button>
+	<iframe width="100%" scrolling="no" height="60" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=12&icon=1&num=5" id="tq"></iframe>
+	<header>
+		<div class="single clearfix">
+			<ul class="clearfix">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<span>Carrier</span>
+			<span>13:37</span>
+			<img src="./images/battery.png">
+		</div>
+	</header>
+	<section class="title clearfix">
+		<a href="pro-details.html" id="back">&lt;</a>
+		<h1>The shopping cart</h1>
+	</section>
+
+	<section>
+		<div class="content">
+			<ul>
+				<a href="pro-details.html">
+					<li class="clearfix">
+						<img src="./images/sc1.png"/>
+						<div class="contenttext">
+							<h2>Picnic Cupcakes</h2>
+							<span>1</span>
+							<p>Price :<span>$5</span></p>
+						</div>
+					</li>
+				</a>
+				<a href="pro-details.html">
+					<li class="clearfix">
+						<img src="./images/sc2.png">
+						<div class="contenttext">
+							<h2>Girled Barbecue</h2>
+							<span>1</span>
+							<p>Price :<span>$25</span></p>
+						</div>
+					</li>
+				</a>
+				<a href="pro-details.html">
+					<li class="clearfix">
+						<img src="./images/sc3.png">
+						<div class="contenttext">
+							<h2>Morning Breakfast</h2>
+							<span>1</span>
+							<p>Price :<span>$25</span></p>
+						</div>
+					</li>
+				</a>
+				<a href="pro-details.html">
+					<li class="clearfix">
+						<img src="./images/sc4.png">
+						<div class="contenttext">
+							<h2>Australia steak</h2>
+							<span>1</span>
+							<p>Price :<span>$105</span></p>
+						</div>
+					</li>
+				</a>
+			</ul>
+		</div>
+	</section>
+	<footer>
+		<a href="">
+			<div class="footer">
+				<span>$160</span>
+			</div>
+		</a>
+	</footer>
+	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#weather').click(function(){
+				$('#tq').toggle();
+			});
+		});
+	</script>
+</body>
+</html>

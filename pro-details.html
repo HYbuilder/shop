@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>product-details</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/pro-details.css">
+	<link rel="stylesheet" type="text/css" href="./fonts/iconfont.css">
+	<meta name="viewport" content="width=640,target-densitydpi=device-dpi,maximum-scale=1.0,user-scalable=no"/>
+	<script type="text/javascript">
+    function setWidth(e){if(/Andriod/i.test(navigator.userAgent)){var f,d=window.innerWidth;(d!=e)&&(f=d/e),document.addEventListener("DOMContentLoaded",function(){var a=document.getElementsByTagName("body")[0];a.style.webkitTransformOrigin="left top";a.style.webkitTransform="scale("+f+")"},!1)}}setWidth(640);
+    </script>
+    <script src="./js/jquery-1.10.2.js"></script>
+		<script>
+	function show(){
+		var nav=document.getElementById("menu");
+		nav.style.display="block"
+	}
+
+	function hide(){
+		var nav=document.getElementById("menu");
+		nav.style.display="none"
+	}
+
+	</script>
+
+</head>
+<body>
+	<button class="weather">点击显示天气</button>
+	<iframe width="100%" scrolling="no" height="60" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=12&icon=1&num=5" class="tq"></iframe>
+	<div class="header">
+		<div class="single clearfix">
+			<ul class="clearfix">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<span>Carrier</span>
+			<span>13:37</span>
+			<img src="./images/battery.png">
+		</div>
+		<div class="title clearfix">
+			<a href="shop.html" id="back">&lt;</a>
+			<h1>Product Details</h1>
+			<a href="javascript:voide(0)" class="caidan"  id="btn" onclick="show()"><i class="iconfont icon-xxx" >&#xe606;</i></a>
+		</div>
+		<div class="menu" id="menu">
+			<button class="weather">点击显示天气</button>
+			<iframe width="100%" scrolling="no" height="60" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=12&icon=1&num=5" class="tq"></iframe>
+			<div class="single clearfix">
+				<ul class="clearfix">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<span>Carrier</span>
+				<span>13:37</span>
+				<img src="./images/battery.png">
+			</div>
+			<div class="title clearfix">
+				<h1>Menu</h1>
+				<a href="javascript:voide(0)" class="caidan" id="btn2" onclick="hide()"><i class="iconfont icon-xxx close" >&#xe651;</i></a>
+			</div>
+			<ul class="xiala">
+				<a href="">
+					<li><i class="iconfont">&#xe63d;</i><span>Profile</span></li>
+				</a>
+				<a href="">
+					<li><i class="iconfont">&#xe618;</i><span>Inbox</span></li>
+				</a>
+				<a href="">
+					<li><i class="iconfont">&#xe603;</i><span>Location</span></li>
+				</a>
+				<a href="">
+					<li><i class="iconfont">&#xe64f;</i><span>FAQs</span></li>
+				</a>
+				<a href="">
+					<li><i class="iconfont">&#xe612;</i><span>Settings</span></li>
+				</a>
+				<a href="index.html">
+					<li><i class="iconfont">&#xe602;</i><span>Sign Out</span></li>
+				</a>
+			</ul>
+		</div>		
+	</div>
+
+	<!-- 广告图 -->
+	<section>
+		<div class="banner">
+			<img src="./images/bg6.png">
+			<a href="" class="banner-left"><span>&lt;</span></a>
+			<a href="" class="banner-right"><span>&gt;</span></a>	
+		</div>
+	</section>
+	<article>
+		<div class="content">
+			<h2>Fresh Homemade Burger</h2>
+			<p>Price:<span>$5  </span><del>$10</del></p>
+			<ul>
+				<li>
+					<img src="./images/star1.png">
+					<img src="./images/star1.png">
+					<img src="./images/star1.png">
+					<img src="./images/star1.png">
+					<img src="./images/star2.png">
+					<span>(215)</span>
+				</li>
+			</ul>
+			<div class="shop"><a href="sc.html"><i class="iconfont">&#xe64a;</i></a></div>
+		</article>
+	</section>
+	<footer class="footer">
+		<div class="description">
+			<h2>Description</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<p>Suspendisse sed leo tellus. Praesent nec vehicula ligula,non</p>
+			<p>laoreet ligula. Maecenas at massa eget orci porttitor semper. Sed</p>
+			<p>lobortis magna in faucibus commodo. Ut purus odio, gravida sit</p>
+			<p>amet laoreet at, dictum et urna.</p>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.weather').click(function(){
+				$('.tq').toggle();
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+
+section .banner{
+	position: relative;
+}
+
+section .banner img{}
+
+section .banner a{
+	
+}
+
+section .banner a span{
+	font-size: 32px;
+	color: #fff;
+}
+section .banner .banner-left{
+	position: absolute;
+	top: 47%;
+	left: 20px;
+}
+section .banner .banner-right{
+	position: absolute;
+	top: 47%;
+	right: 20px;
+}
+
+
+article{background: #fff;}
+.content {
+	width: 90%;
+	margin:0 auto;
+	position: relative;
+	padding: 30px 0;
+	border-bottom: 1px solid #b5b5b5;
+}
+.content h2{
+	font-size: 30px;
+	font-weight: bold;
+}
+.content p{
+	font-size: 35px;
+	color: #6c6c6c;
+	margin-bottom: 20px;
+}
+.content p span{
+	color: #d5270b;
+}
+.content p del{}
+
+
+.content ul li span{
+	font-size: 25px;
+	color: #6c6c6c;
+	margin-left: 20px;
+}
+
+
+.content .shop{
+	float: right;
+	background: #ffbf25;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 100px;
+	position: absolute;
+	top: 30%;
+	right: 20px;
+}
+.content .shop i{
+	font-size: 60px;
+	color: #000;
+	line-height: 100px;
+}
+
+
+.footer{
+	background: #fff;
+	padding: 30px 0;
+}
+
+.footer .description{
+	width: 90%;
+	margin:0 auto;
+	text-align: left;
+}
+
+.footer .description h2{
+	font-size: 45px;
+	line-height: 30px;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+.footer .description p{
+	font-size: 16px;
+	line-height: 30px;
+	color: #6c6c6c;
+	margin-bottom: 10px;
+}
+
+
+
+.header{
+	width: 640px;
+}
+/*头部部分样式*/
+/*header */.single{
+	text-align: center;
+}
+/*header */.single ul{
+	margin:15px 10px 3px 10px;
+	display: inline-block;
+	float: left;
+}
+/*header */.single ul li{ 
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #fff;
+	margin:0 2px;
+}
+/*header */.single span{
+	display: inline-block;
+	font-size: 24px;
+	color: #fff;
+	margin: auto;
+}
+/*header */.single span:nth-child(2){
+	float: left;
+	margin-top: 10px;
+}
+/*header */.single span:nth-child(3){
+	margin:10px 120px 0 0;
+}
+/*header */.single img{
+	margin-right: 10px;
+	margin-top: 15px;
+	float: right;
+}
+
+
+/*标题及菜单按钮样式*/
+.title{text-align: center;margin-bottom: 20px;}
+.title h1{
+	display: inline-block;
+	font-size: 40px;
+	color: #fff;
+	margin-top: 30px;
+	font-weight: normal;
+	padding-left: 60px;
+}
+.title i{
+	width: 50px;
+	height: 50px;
+	border:1px solid #fff;
+	border-radius: 50%;
+	font-size: 30px;
+	line-height: 50px;
+	color: #fff;
+	float: right;
+	margin-top: 30px;
+	margin-right: 20px;
+}
+.title i:hover .menu{
+	display: block;
+}
+#back{
+	font-size: 40px;
+	line-height: 50px;
+	display: inline-block;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	color: #fff;
+	border-radius: 50%;
+	border:1px solid #f6c8b1;
+	float: left;
+	margin:30px 0 0 20px;
+}
+
+
+
+
+/*菜单下拉列表*/
+
+.menu{
+	background: #ffbf25;
+	padding-bottom: 10px;
+	position: absolute;
+	top: 0px;
+	width: 640px;
+	z-index: 999;
+	display: none;
+}
+
+.menu .xiala a:hover{
+	text-decoration: none;
+}
+.menu .xiala a li{
+width: 90%;
+height: 50px;
+text-align: left;
+margin:0 auto;
+border-bottom:1px solid rgba(255,255,255,0.5);
+}
+.menu .xiala a li:hover{
+	background: #d05728;
+}
+.menu .xiala a li:hover span{
+	color: #fff;
+}
+.menu .xiala a li span{
+	font-size: 30px;
+	color: #d05728;
+	height: 50px;
+	line-height: 50px;
+}
+
+.menu .xiala a:last-child li{
+	border-bottom: none;
+}
+
+
+
+/*天气隐藏*/
+.tq{
+	display: none;
+}
+/*天气点击显示按钮*/
+.weather{
+	background: none;
+	outline: none;
+	color: #fff;
+	border:1px solid #fff;
+	position: relative;
+	left: 10px;
+	z-index: 1000;
+}
+
+.single ul li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 0px -3px;
+}

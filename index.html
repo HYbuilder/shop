@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>login</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<meta name="viewport" content="width=640,target-densitydpi=device-dpi,maximum-scale=1.0,user-scalable=no"/>
+	<script type="text/javascript">
+    function setWidth(e){if(/Andriod/i.test(navigator.userAgent)){var f,d=window.innerWidth;(d!=e)&&(f=d/e),document.addEventListener("DOMContentLoaded",function(){var a=document.getElementsByTagName("body")[0];a.style.webkitTransformOrigin="left top";a.style.webkitTransform="scale("+f+")"},!1)}}setWidth(640);
+    </script>
+</head>
+<body>
+	<button id="weather">点击显示天气</button>
+	<iframe width="100%" scrolling="no" height="60" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=12&icon=1&num=5" id="tq"></iframe>
+	<header>
+		<div class="single clearfix">
+			<ul class="clearfix">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<span>Carrier</span>
+			<span>13:37</span>
+			<img src="./images/battery.png">
+		</div>
+	</header>
+	<section class="title">
+		<h1>Sign In</h1>
+		<h2>App JI Kit</h2>
+	</section>
+	<content>
+		<form action="list.html">
+			<input type="text" name="Username" placeholder="Username">
+			<input type="password" name="password" placeholder="Password">
+			<input type="submit" name="Login" value="Login" >
+		</form>
+		<a href="">Forgot Password?</a>
+		<h2>Or Login In with</h2>
+	</content>
+
+	<footer>
+		<div class="other clearfix">
+			<a href="">
+				<span class="facebook">Facebook</span>
+			</a>
+			<a href="">
+				<span class="twitter">Twitter</span>
+			</a>
+		</div>
+	</footer>
+	
+	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#weather').click(function(){
+				$('#tq').toggle();
+			});
+		});
+	</script>
+</body>
+</html>

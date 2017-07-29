@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>list</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" type="text/css" href="./css/reset1.css">
+	<link rel="stylesheet" type="text/css" href="./css/list.css">
+	<link rel="stylesheet" type="text/css" href="./fonts/iconfont.css">
+	<meta name="viewport" content="width=640,target-densitydpi=device-dpi,maximum-scale=1.0,user-scalable=no"/>
+	<script type="text/javascript">
+    function setWidth(e){if(/Andriod/i.test(navigator.userAgent)){var f,d=window.innerWidth;(d!=e)&&(f=d/e),document.addEventListener("DOMContentLoaded",function(){var a=document.getElementsByTagName("body")[0];a.style.webkitTransformOrigin="left top";a.style.webkitTransform="scale("+f+")"},!1)}}setWidth(640);
+    </script>
+    <script src="./js/jquery-1.10.2.js"></script>
+		<script>
+	function show(){
+		var nav=document.getElementById("menu");
+		nav.style.display="block"
+	}
+
+	function hide(){
+		var nav=document.getElementById("menu");
+		nav.style.display="none"
+	}
+
+	</script>
+
+</head>
+<body>
+	<button class="weather">点击显示天气</button>
+	<iframe width="100%" scrolling="no" height="60" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=12&icon=1&num=5" class="tq"></iframe>
+	<div class="header">
+		<div class="single clearfix">
+			<ul class="clearfix">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<span>Carrier</span>
+			<span>13:37</span>
+			<img src="./images/battery.png">
+		</div>
+		<div class="title clearfix">
+			<h1>List Screen</h1>
+			<a href="javascript:voide(0)" class="caidan"  id="btn" onclick="show()"><i class="iconfont icon-xxx" >&#xe606;</i></a>
+		</div>
+		<div class="menu" id="menu">
+			<button class="weather">点击显示天气</button>
+			<iframe width="100%" scrolling="no" height="60" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=12&icon=1&num=5" class="tq"></iframe>
+			<div class="single clearfix">
+				<ul class="clearfix">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<span>Carrier</span>
+				<span>13:37</span>
+				<img src="./images/battery.png">
+			</div>
+			<div class="title clearfix">
+				<h1>Menu</h1>
+				<a href="javascript:voide(0)" class="caidan" id="btn2" onclick="hide()"><i class="iconfont icon-xxx close" >&#xe651;</i></a>
+			</div>
+			<ul class="xiala">
+				<a href="">
+					<li><i class="iconfont">&#xe63d;</i><span>Profile</span></li>
+				</a>
+				<a href="">
+					<li><i class="iconfont">&#xe618;</i><span>Inbox</span></li>
+				</a>
+				<a href="">
+					<li><i class="iconfont">&#xe603;</i><span>Location</span></li>
+				</a>
+				<a href="">
+					<li><i class="iconfont">&#xe64f;</i><span>FAQs</span></li>
+				</a>
+				<a href="">
+					<li><i class="iconfont">&#xe612;</i><span>Settings</span></li>
+				</a>
+				<a href="index.html">
+					<li><i class="iconfont">&#xe602;</i><span>Sign Out</span></li>
+				</a>
+			</ul>
+		</div>		
+	</div>
+
+
+		
+		
+	<section class="content">
+		<input type="text" name="" placeholder="Search">
+		<input type="image" name="" src="./images/search.png">
+		<ul>
+			<a href="shop.html"><li class="list1">
+				<!-- <img src="./images/bg1.png" alt=""> -->
+				<div class="contenttext">
+					<h3>John Henry Doe</h3>
+					<p>San Francisco, CA</p>
+				</div>
+				<a href="shop.html"><span>&gt;</span></a>
+			</li></a>
+			<a href="shop.html"><li class="list2">
+				<!-- <img src="./images/bg2.png" alt=""> -->
+				<div class="contenttext">
+					<h3>Christopher Jason</h3>
+					<p>San Francisco, CA</p>
+				</div>
+				<a href="shop.html"><span>&gt;</span></a>
+			</li></a>
+			<a href="shop.html"><li class="list3">
+				<!-- <img src="./images/bg3.png" alt=""> -->
+				<div class="contenttext">
+					<h3>Benjamin Franklin</h3>
+					<p>San Francisco, CA</p>
+				</div>
+				<a href="shop.html"><span>&gt;</span></a>
+			</li></a>
+			<a href="shop.html"><li class="list4">
+				<!-- <img src="./images/bg4.png" alt=""> -->
+				<div class="contenttext">
+					<h3>asmine Woods</h3>
+					<p>San Francisco, CA</p>
+				</div>
+				<a href="shop.html"><span>&gt;</span></a>
+			</li></a>
+			<a href="shop.html"><li class="list5">
+				<!-- <img src="./images/bg5.png" alt=""> -->
+				<div class="contenttext">
+					<h3>Rose Mary</h3>
+					<p>San Francisco, CA</p>
+				</div>
+				<a href="shop.html"><span>&gt;</span></a>
+			</li></a>
+		</ul>
+	</section>
+	<footer>
+		<nav>
+			<ul class="nav">
+				<li><a href=""><i class="iconfont">&#xe64d;</i></a></li>
+				<li><a href=""><i class="iconfont">&#xe661;</i></a></li>
+				<li><a href=""><i class="iconfont">&#xe600;</i></a></li>
+			</ul>
+		</nav>
+	</footer>
+	
+	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.weather').click(function(){
+				$('.tq').toggle();
+			});
+		});
+	</script>
+
+</body>
+</html>
